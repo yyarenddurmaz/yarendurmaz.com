@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yaren Durmaz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav-wrap">
+      <button class="hamburger" id="hamburger-btn">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hakkimda">Hakkımda</a></li>
+        <li><a href="#arastirma">Araştırma</a></li>
+        <li><a href="#tasarim">Tasarım</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Merhaba, ben Yaren Durmaz!</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hakkimda" class="section">
+      <!-- 1. Sadece Başlık Kısmı -->
+      <div class="section-header">
+        <span class="material-symbols-outlined">face_3</span>
+        <h2>Hakkımda</h2>
+      </div>
+
+      <!-- 2. Fotoğraf ve Metnin Yan Yana Duracağı Kısım -->
+      <div class="hakkimda-icerik">
+        <img src="ydd.png" alt="Yaren Durmaz" class="profil-gorseli">
+
+        <div class="hakkimda-metin">
+          <p>2024 yılında İstanbul Kültür Üniversitesi Matematik ve Bilgisayar Bilimleri Bölümü'nden mezun oldum. Şu
+            anda
+            İngilizcemi geliştiriyor ve İspanyolca öğreniyorum. 2025 yılından itibaren İstanbul Rumeli Üniversitesi
+            Bilgisayar Mühendisliği Yüksek Lisans programında eğitimime devam ediyorum.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="arastirma" class="section">
+      <div class="section-header">
+        <span class="material-symbols-outlined">science</span>
+        <h2>Akademik Araştırma</h2>
+      </div>
+      <div class="grid">
+        <h3>Tez Araştırması</h3>
+        <p>
+          Hassas onkoloji ve dijital patoloji veri setleri analizi. Açık ve
+          kontrollü erişimli genomik verilerin günlük takibi ve işlenmesi.
+        </p>
+      </div>
+    </section>
+
+    <section id="tasarim" class="section">
+      <div class="section-header">
+        <span class="material-symbols-outlined">design_services</span>
+        <h2>Projeler</h2>
+      </div>
+      <div class="grid">
+        <div>
+          <h3>p1</h3>
+          <p>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          </p>
+        </div>
+        <div>
+          <h3>p2</h3>
+          <p>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          </p>
+        </div>
+        <div>
+          <h3>p3</h3>
+          <p>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="iletisim" class="section">
+      <div class="section-header">
+        <span class="material-symbols-outlined">mail</span>
+        <h2>İletişim</h2>
+      </div>
+
+      <div class="iletisim-icerik">
+
+        <div class="iletisim-butonlar">
+          <a href="mailto:yarendrmz594@gmail.com" class="contact-btn">Bana E-posta Gönder</a>
+
+          <a href="https://www.linkedin.com/in/yyarenddurmaz" target="_blank" rel="noopener noreferrer"
+            class="social-icon-btn" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="ayirici">veya formu doldur</div>
+
+        <form id="my-contact-form" class="contact-form" action="https://formspree.io/f/mykapyoo" method="POST">
+          <input type="text" name="isim" placeholder="İsminiz" required />
+          <input type="email" name="eposta" placeholder="E-posta Adresiniz" required />
+          <textarea name="mesaj" rows="4" placeholder="Mesajınız..." required></textarea>
+          <button type="submit" class="btn">Mesajı Gönder</button>
+
+          <p id="form-status"></p>
+        </form>
+      </div>
+    </section>
+
+
+  </main>
+  <footer>
+    <div class="container footer-content">
+      <p class="copyright">&copy; 2026 <br> Yaren Durmaz <br>Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
