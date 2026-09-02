@@ -36,6 +36,16 @@ if (form) {
     });
 }
 
+// Hamburger Menü Aç/Kapat İşlemi
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('contextmenu', (e) => e.preventDefault());
 
@@ -45,3 +55,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     document.addEventListener('selectstart', (e) => e.preventDefault());
 });
+
