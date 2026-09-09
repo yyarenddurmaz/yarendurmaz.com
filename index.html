@@ -5,13 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yaren Durmaz</title>
+  <meta name="description" content="Yaren Durmaz. Kişisel portfolyo, projeler ve akademik çalışmalar.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  </noscript>
 </head>
 
 <body>
@@ -39,15 +40,13 @@
 
   <main class="container">
     <section id="hakkimda" class="section">
-      <!-- 1. Sadece Başlık Kısmı -->
       <div class="section-header">
         <span class="material-symbols-outlined">face_3</span>
         <h2>Hakkımda</h2>
       </div>
 
-      <!-- 2. Fotoğraf ve Metnin Yan Yana Duracağı Kısım -->
       <div class="hakkimda-icerik">
-        <img src="ydd.png" alt="Yaren Durmaz" class="profil-gorseli">
+        <img src="ydd.webp" alt="Yaren Durmaz" class="profil-gorseli" fetchpriority="high">
 
         <div class="hakkimda-metin">
           <p>2024 yılında İstanbul Kültür Üniversitesi Matematik ve Bilgisayar Bilimleri Bölümü'nden mezun oldum. Şu
